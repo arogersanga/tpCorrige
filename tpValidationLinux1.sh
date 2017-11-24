@@ -54,15 +54,15 @@ installerVagrantFile ()
 
 quelqueOperationSurVagrantfile ()
 {
-	sed -i "/private_network/s/^  \# /  /g" Vagrantfile
+#	sed -i "/private_network/s/^  \# /  /g" Vagrantfile
     	sed -i '/synced_folder/s/^ \# /  /g' Vagrantfile
 
-echo "on decommente la ligne";
-sed -i '/private_network/s/^  \# /  /g' Vagrantfile
-mkdir Test2
-vagrant up
+	echo "on decommente la ligne";
+	sed -i '/private_network/s/^  \# /  /g' Vagrantfile
+	
+	vagrant up
 
-vagrant ssh
+	vagrant ssh
 }
 
 
